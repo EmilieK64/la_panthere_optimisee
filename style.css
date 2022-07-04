@@ -62,7 +62,7 @@ a:hover {
     padding: 50px;
 }
 .bloc-contact {
-    height:700px;
+    height:1000px;
     padding-top:40px;
     padding-bottom:20px;
     justify-content: flex-start;
@@ -420,7 +420,7 @@ header {
     transform: translate(0, -50%);
     -webkit-transform: translateY(-50%);
     list-style-type: none;
-}    
+} 
 @media (min-width: 768px) {
     .navbar {
         margin-bottom: 0;
@@ -991,6 +991,9 @@ form input {
     border-radius: 5px;
     font-family: "helvetica";
 }
+.textarea-responsive {
+    display: none;
+}
 @media (max-width: 1024px) {
      .bloc {
         padding-left: 20px;
@@ -1061,6 +1064,9 @@ form input {
     }
     .col-sm-4 {
         width:230px;
+    }
+    .textarea-mobile {
+        display:none;
     }
 }
 
@@ -1151,9 +1157,9 @@ form input {
     .b-parallax {
         background-attachment: fixed;
     }
-    .bloc-contact {
-        height:850px;
-    }
+    /* .bloc-contact {
+        height:1000px;
+    } */
     
     
     /* .navbar .nav {
