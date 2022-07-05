@@ -149,7 +149,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: white;
 }
 
 .d-bloc .a-btn:hover,
@@ -281,6 +281,10 @@ a:hover {
 }
 .btn-contact {
     width:440px;
+    background-color:#521717;
+}
+.btn-contact:hover {
+    background-color:#343131;
 }
 .voffset {
     margin-top: 30px;
@@ -367,11 +371,11 @@ header {
 
 .nav > li {
     float: left;
-    margin-top: 4px;
+    margin-top: 15px;
     font-size: 16px;
 }
 .nav-contact > li {
-    margin-bottom: 30px;
+    margin-bottom: 4px;
 }
 .text-decoration {
     text-decoration:none;
@@ -385,14 +389,14 @@ header {
     background: transparent;
 }
 
-/* .navbar-toggle {
+.navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
-} */
+} 
 
-/* .navbar-toggle:hover {
+.navbar-toggle:hover {
     background: transparent!important;
-} */
+} 
 
 .navbar-toggle .icon-bar {
     background-color: rgba(0, 0, 0, .5);
@@ -807,8 +811,11 @@ p {
     margin-bottom:20px;
     flex-direction:row;
 }
+.fa-twitter {
+    color:white;
+}
 h2 {
-    font-size: 22px;
+    font-size: 29px;
     line-height: 1.4em;
     text-align: center;
 }
@@ -908,12 +915,12 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F2EBEB;
+    background: #FFFFFF;
     color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #bebcbc!important;
+    background: #e9e3e3!important;
     color: black!important;
 }
 
