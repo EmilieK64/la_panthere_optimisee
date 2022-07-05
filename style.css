@@ -166,7 +166,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(226, 215, 215);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -425,6 +425,13 @@ header {
     -webkit-transform: translateY(-50%);
     list-style-type: none;
 } 
+.row-contact {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width:100%;
+    justify-content: space-between;
+}
 @media (min-width: 768px) {
     .navbar {
         margin-bottom: 0;
@@ -608,7 +615,9 @@ button {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
-
+/* .form-1 {
+    height:800px;
+} */
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -967,6 +976,7 @@ h4 {
 footer p {
     margin-top:20px;
     width:100%;
+    font-size: 20px;
 }
 fieldset {
     color:#521717;
@@ -982,7 +992,9 @@ label {
    justify-content: flex-start;
    text-align: start;
 }
-
+form {
+    margin-left:5px;
+}
 form input {
     width:100%;
 }
@@ -1066,15 +1078,13 @@ form input {
         width:100%;
     }
     .bloc-contact {
-        height:792px;
+        height:890px;
         flex-direction: row;
     }
     .col-sm-4 {
         width:230px;
     }
-    .textarea-mobile {
-        display:none;
-    }
+
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
@@ -1083,6 +1093,9 @@ form input {
     }
     .nav-center.navbar .nav {
         max-width: 100%
+    }
+    .bloc-contact {
+        margin-left:30px;
     }
     /* .tight-width-whitespace {
         width:700px;
@@ -1195,6 +1208,9 @@ form input {
     /* .nav > li:hover {
         background: rgba(0, 0, 0, .08);
     } */
+    textarea {
+        width:424px;
+    }
     .dropdown .dropdown a .caret {
         float: none;
         margin: 5px 0 0 10px!important;
@@ -1289,6 +1305,7 @@ form input {
         width: 180px;
         height: 320px;
     }
+    
 }
 
 @media (max-width: 400px) {
@@ -1301,6 +1318,9 @@ form input {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+    .bloc-contact {
+        height:1063px;
     }
 }
 @media (min-width: 1565px) {
@@ -1315,5 +1335,8 @@ form input {
     }
     q {
         width : 500px;
+    }
+    p {
+        font-size:20px;
     }
 }
