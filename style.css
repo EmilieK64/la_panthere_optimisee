@@ -312,7 +312,7 @@ header {
     margin-left:15px;
     flex-direction: column;
 }
-.col-sm-6-contact {
+.contact {
     justify-content: space-between;
 }
 
@@ -341,9 +341,6 @@ header {
     align-items:center;
     text-align: center;
 }
-/* .navbar-brand {
-    
-} */
 .navbar-1 {
     margin-right:10px;
 } 
@@ -1305,7 +1302,10 @@ form input {
         width: 180px;
         height: 320px;
     }
-    
+    .adjust-contact {
+        margin-top: 100px;
+        max-height: 5px;
+    }    
 }
 
 @media (max-width: 400px) {
