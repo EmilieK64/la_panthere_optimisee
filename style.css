@@ -810,7 +810,7 @@ p {
     color:white;
 }
 h2 {
-    font-size: 29px;
+    font-size: 26px;
     line-height: 1.4em;
     text-align: center;
 }
@@ -884,6 +884,7 @@ h4 {
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
+    font-size:17px;
 }
 
 .bgc-white {
@@ -898,7 +899,6 @@ h4 {
 
 .bgc-atomic-tangerine {
     background-color: #454242;
-    margin-top: 35px;
 }
 
 .tc-white {
@@ -1067,6 +1067,10 @@ form input {
     }
     .col-sm-4 {
         width:230px;
+    }
+
+    #bloc-6 {
+        margin-top: 35px;
     }
 
 }
@@ -1290,6 +1294,10 @@ form input {
         margin-top: 100px;
         max-height: 5px;
     }    
+
+    #bloc-6 {
+        margin-top: 35px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1321,6 +1329,6 @@ form input {
         width : 500px;
     }
     p {
-        font-size:20px;
+        font-size:19px;
     }
 }
