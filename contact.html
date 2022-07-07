@@ -30,20 +30,23 @@
 		<main class="page-container">
 			
 			<!-- bloc-0 -->
-			<header class="bloc bgc-white l-bloc " id="bloc-0"> 
+			<div class="bloc bgc-white l-bloc " id="bloc-0"> 
 				<div class="container bloc-sm">
-				   <nav class="navbar">
+				   <nav class="navbar row">
 					   <div class="navbar-header">
-						   <a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="logo de l'agence: tête de panthère sur fond blanc" height="166" width="166" class="background_image"/></a> <
+						   <a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="logo de l'agence : tête de panthère sur fond blanc" height="166" width="166" class="background_image"/></a> 
+						   <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+							   <span class="sr-only">Toggle navigation </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+						   </button>
 					   </div>
-					   <div class="navbar-1">
-						   <ul class="site-navigation nav nav-contact navbar-nav">
-							   <li><a href="index.html" class="text-decoration">Accueil</a></li>
+					   <div class="navbar-collapse navbar-1 special-dropdown-nav collapse" aria-expanded="false" style="height: 1px;">
+						   <ul class="site-navigation nav navbar-nav">
+							   <li><a href="index.html">Accueil</a></li>
 						   </ul>
 					   </div>
 				   </nav>
 			   </div>
-		   </header>
+		   </div>
 		   <!-- bloc-0 END -->
 
 			<!-- bloc-6 -->
@@ -152,4 +155,36 @@
 		<!-- Principal conteneur END -->
 			
 	</body>
+
+	<script type="text/javascript">
+		// TODO : checker si dans la div class="navbar-collapse" si aria-expanded == 'false' alors 
+		// le ul de classe site-navigation doit display: none
+	
+		// On récupère l'élément div
+		const div = document.querySelector('.navbar-collapse');
+		// On récupère la valeur de l'attribut aria-expanded
+		const ariaExpandedAttribute = div.getAttribute('aria-expanded');
+		console.log(ariaExpandedAttribute);
+		// On la teste
+		const ulElement = document.querySelector('.site-navigation');
+		console.log(ulElement);
+		if (ariaExpandedAttribute == 'true') {
+			// Si vaut false, alors display: none
+			ulElement.style.display = 'none';
+			const burgerMenuButton = document.getElementById('nav-toggle');
+			burgerMenuButton.style.display = 'block';
+	
+			burgerMenuButton.addEventListener('click', function() {
+			if (ulElement.style.display = 'none') {
+			// Si vaut false, alors display: none
+			ulElement.style.display = 'block';
+			} else if (ulElement.style.display = 'block') {
+				ulElement.style.display = 'none';
+			}
+		});
+		} else {
+			ulElement.style.display = 'block';
+		}
+		</script>
+
 </html>
