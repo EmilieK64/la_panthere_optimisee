@@ -326,8 +326,8 @@ header {
     margin-left: 10px;
 }
 
-#bloc-1-hero h1 {
-    font-size: 36px;
+h1, h2 {
+    font-weight: bolder !important;
 }
 
 .navbar {
@@ -347,7 +347,7 @@ header {
 
 .navbar-brand img {
     max-height: 300px;
-    margin: 23px 5px 0 0;
+    margin: 28px 5px 0 0;
     display: inline; 
 }
 
@@ -751,7 +751,7 @@ label,
 .btn,
 a {
     font-family: "helvetica";
-    font-weight: 400;
+    font-weight: 500;
     color: #575757!important;
 }
 h2 {
@@ -816,7 +816,7 @@ p {
     color:white;
 }
 h2 {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.4em;
     text-align: center;
 }
@@ -1089,7 +1089,7 @@ form input {
         margin-top: 35px;
     }
     .h2-bloc-5-cta {
-        font-size:35px;
+        font-size:30px;
     }
 
 }
@@ -1137,21 +1137,11 @@ form input {
         overflow-x: hidden;
         position: relative;
     }
-    /* .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    } */
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
     }
-    /* .bloc-fill-screen .fill-bloc-top-edge,
-    /* .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    } */ 
 }
 
 @media (max-width: 767px) {
@@ -1171,7 +1161,7 @@ form input {
         padding-right: 10px!important;
     }
     h1 {
-        width:400px;
+        width:447px;
         display:flex;
         
     }
