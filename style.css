@@ -1042,6 +1042,9 @@ form input {
         width:50%;
         justify-content: center;
     }
+    .bg-banniere {
+        margin-top: 0px;
+    }
     h3 {
         font-size:22px;
     }
@@ -1310,6 +1313,9 @@ form input {
 
     #bloc-6 {
         margin-top: 35px;
+    }
+    .bg-banniere-bloc-5-cta {
+        margin-top: 0px;
     }
 }
 
